@@ -1,0 +1,40 @@
+/* NAVBAR */
+header {
+  background: #111;
+  padding: 14px 0;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 18px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+/* MAIN CONTENT */
+main {
+  max-width: 800px;
+  margin: auto;
+  padding: 40px;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 32px;
+  color: #222;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #555;
+}
