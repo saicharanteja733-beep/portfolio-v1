@@ -281,25 +281,3 @@ footer {
   font-size: 1rem;
   color: #333;
 }
-.menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 28px;
-  cursor: pointer;
-}
-
-@media (max-width: 600px) {
-  nav a {
-    display: none;
-  }
-
-  nav.active a {
-    display: block;
-    margin: 8px 0;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-}
