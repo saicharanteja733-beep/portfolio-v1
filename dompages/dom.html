@@ -1,0 +1,47 @@
+<html>
+<head>
+    <title>TODOAPP</title>
+    <link rel="icon" type="image/x-icon" href="data:,">
+</head>
+<body>
+    <h2>TO-DO-APP</h2>
+
+    <input id="todoapp" type="text" placeholder="enter the task"/>
+    <button id="btn">Add</button>
+
+    <ul id="tasklist"></ul>
+
+<script>
+    const input = document.getElementById("todoapp");
+    const btn = document.getElementById("btn");
+    const list = document.getElementById("tasklist");
+
+    btn.addEventListener("click", function() {
+
+        const text = input.value;
+
+        if (text.trim() === "") return;
+
+        const li = document.createElement("li");
+        li.textContent = text;
+
+        const delBtn = document.createElement("button");
+        delBtn.textContent = "X";
+        delBtn.style.marginLeft = "10px";
+        delBtn.style.color = "white";
+        delBtn.style.background = "red";
+        delBtn.style.border = "none";
+        delBtn.style.padding = "3px 6px";
+        delBtn.style.cursor = "pointer";
+
+        delBtn.addEventListener("click", function() {
+            li.remove();
+        });
+
+        li.appendChild(delBtn);
+        list.appendChild(li);
+        input.value = "";
+    });
+</script>
+</body>
+</html>
